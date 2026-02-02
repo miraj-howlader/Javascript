@@ -1,11 +1,15 @@
-const jim = 55;
-const tim=46;
-const kim = 77;
+const heighs = [34,5,6,1,78,54,3,5,74]
 
-if(jim>tim && jim>kim){
-    console.log('jim boro than tim and kim')
-}else if(tim>jim && tim>kim){
-    console.log('tim boro than jim and kim')
-}else{
-    console.log('kim boro than jim and kim')
+
+const getMax = (numbers)=>{
+    let max=numbers[0]
+  for(const number of numbers){
+    if(number<max){
+        max=number
+    }
+  }
+  return max
 }
+
+
+console.log(getMax(heighs))
