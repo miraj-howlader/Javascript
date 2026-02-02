@@ -1,15 +1,17 @@
-const heighs = [34,5,6,1,78,54,3,5,74]
+function woodQuantity(chair,table,bed){
+    const perChairWood = 3;
+    const perTableWood = 10;
+    const perBedWood = 50;
+    
+    const allChairWood = chair * perChairWood;
+    const allTableWood = table * perTableWood;
+    const allBedWood = bed * perBedWood
 
 
-const getMax = (numbers)=>{
-    let max=numbers[0]
-  for(const number of numbers){
-    if(number<max){
-        max=number
-    }
-  }
-  return max
+    const totalWood = allChairWood+allTableWood+allBedWood;
+
+    return totalWood;
 }
 
 
-console.log(getMax(heighs))
+console.log(woodQuantity(23,34,6))
